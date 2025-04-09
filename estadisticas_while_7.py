@@ -12,5 +12,6 @@ while seguir == "si":
     else:
         acumulador_negativos *= numeros
     seguir =input("¿Desea seguir? si/no: ")
+
 print(f"La suma de los numeros positivos es {acumulador_positivos} y el producto de los negativos es {acumulador_negativos}")
 

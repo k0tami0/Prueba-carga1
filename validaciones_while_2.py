@@ -12,7 +12,6 @@ while clave_ingresada != clave_usuario and contador > 0:
     clave_ingresada =input(f"Intente nuevamente: ")
     contador -=1
 
-
 if clave_ingresada == clave_usuario:
     print("Acceso permitido.")
 else:
