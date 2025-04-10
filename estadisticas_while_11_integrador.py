@@ -39,6 +39,6 @@ porcentaje_negativos = contador_negativos / total_ingresados * 100
 #salidas
 print(f"""La suma acumulada de los numeros positivos es de {acumulador_positivos}, y la de los negativos es {acumulador_negativos}
 se ingresaron {contador_negativos} numeros negativos
-el promedio de los numeros positivos es de {promedio_positivos}
+el promedio de los numeros positivos es de {promedio_positivos:.2f}
 el numero positivo mas grande es {positivo_mayor}
-el porcentaje de numeros negativos respecto al total de ingresos es de {porcentaje_negativos}%""")
+el porcentaje de numeros negativos respecto al total de ingresos es de {porcentaje_negativos:.2f}%""")

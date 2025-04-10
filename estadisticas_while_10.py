@@ -15,5 +15,5 @@ while True:
             break
     elif contador == 10:
         break
-promedio = acumulador_numeros // contador
-print(f"La suma de todos los numeros ingresado es de {acumulador_numeros} y su promedio es {promedio}")
+promedio = acumulador_numeros / contador
+print(f"La suma de todos los numeros ingresado es de {acumulador_numeros} y su promedio es {promedio:.2f}")

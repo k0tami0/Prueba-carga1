@@ -13,6 +13,7 @@ Una vez ingresados y validados los datos, mostrarlos por pantalla.
 print("Bienvenido a la empresa de Censos a continuación se le pediran los siquientes datos: ")
 apellido= input("Ingrese su apellido: ")
 edad = int(input("Ingrese su edad (debe estar entre 18 y 90 años): "))
+
 while edad > 90 or edad < 18:
     edad = int(input("Edad inválida, por favor ingrese una edad entre 18 y 90 años."))
 
@@ -21,7 +22,7 @@ estado_civil_ingresado= input("Escriba su estado civil \n Soltero/a \n Casado/a 
 
 while estado_civil_ingresado not in estado_civil:
     print("Escriba unos de los estados civiles mostrados")
-    estado_civil_ingresado= input("Ingrese su estado civil \n 1: Soltero/a \n 2: Casado/a \n 3: Divorciado/a \n 4: Viudo/a : ")
+    estado_civil_ingresado= input("Ingrese su estado civil \n Soltero/a \n Casado/a \n Divorciado/a \n Viudo/a: ")
 
 legajo = int(input("Ingrese su numero de legajo: "))
 while legajo < 999:
