@@ -1,0 +1,29 @@
+def crear_matriz(cantidad_filas:int, cantidad_columnas:int, valor_inicial:any) -> list:
+    matriz = []
+    for i in range(cantidad_filas):
+        fila = [valor_inicial] * cantidad_columnas
+        matriz += [fila]
+    return matriz
+
+matriz_a = [[9,8],
+            [6,5],
+            [3,2]]
+
+matriz_b = [[1,2,3,4],
+            [1,2,3,4]]
+
+# Crear matriz resultado con ceros
+matriz_c = crear_matriz(len(matriz_a), len(matriz_b[0]), 0)
+
+# Multiplicación de matrices
+for i in range(len(matriz_a)):
+        for j in range(len(matriz_b[0])):
+            for k in range(len(matriz_a[0])):
+                matriz_c[i][j] += matriz_a[i][k] * matriz_b[k][j]
+
+
+# Mostrar resultado
+for fila in matriz_c:
+    print(fila)
+
+
